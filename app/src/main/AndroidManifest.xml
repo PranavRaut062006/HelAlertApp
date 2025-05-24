@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.helalert">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_BLUETOOTH" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <!-- Permission to send SMS -->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/smarthelmet_logo"
+        android:label="HelAlert"
+        android:roundIcon="@drawable/smarthelmet_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HelAlert">
+
+        <!-- Welcome Page -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.HelAlert">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Main Menu -->
+        <activity android:name=".MenuActivity"
+            android:exported="true"/>
+
+        <!-- Emergency Contacts -->
+        <activity android:name=".EmergencyContactsActivity"
+            android:exported="true"/>
+
+        <!-- Document Management -->
+        <activity android:name=".DocumentsActivity"
+            android:exported="true"/>
+
+        <!-- Service Interval -->
+        <activity android:name=".ServicingActivity"
+            android:exported="true"/>
+
+        <!-- Bluetooth Handling -->
+        <activity android:name=".BluetoothActivity"
+            android:exported="true"/>
+
+        <activity android:name=".AccidentResponseActivity"
+            android:exported="true"/>
+
+
+        <receiver android:name=".NotificationReceiver" android:exported="true"/>
+        <receiver android:name=".SafeResponseReceiver" android:exported="false" />
+
+
+
+
+
+    </application>
+</manifest>

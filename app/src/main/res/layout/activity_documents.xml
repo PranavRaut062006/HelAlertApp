@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edit_dl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Driving License (DL) Link"
+            android:inputType="textUri"/>
+
+        <Button
+            android:id="@+id/btn_open_dl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open DL"/>
+
+        <EditText
+            android:id="@+id/edit_rc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration Certificate (RC) Link"
+            android:inputType="textUri"/>
+
+        <Button
+            android:id="@+id/btn_open_rc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open RC"/>
+
+        <EditText
+            android:id="@+id/edit_insurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bike Insurance Link"
+            android:inputType="textUri"/>
+
+        <Button
+            android:id="@+id/btn_open_insurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Insurance"/>
+
+        <EditText
+            android:id="@+id/edit_puc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pollution Certificate (PUC) Link"
+            android:inputType="textUri"/>
+
+        <Button
+            android:id="@+id/btn_open_puc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open PUC"/>
+
+        <EditText
+            android:id="@+id/edit_medical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medical Certificate Link"
+            android:inputType="textUri"/>
+
+        <Button
+            android:id="@+id/btn_open_medical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Medical Certificate"/>
+
+        <Button
+            android:id="@+id/btn_save_docs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Documents"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
