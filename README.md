@@ -71,7 +71,8 @@
 ---
 
 ## 📷 Screenshots
-
+![1.jpg](Images/1.jpg)
+![2.jpg](Images/2.jpg)
 
 ---
 
